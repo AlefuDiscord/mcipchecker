@@ -1,1 +1,2 @@
 # mcipchecker
+minecraft serverと思われるipに接続し、もしminecraft serverだった場合ConnectIPにipを保存する
