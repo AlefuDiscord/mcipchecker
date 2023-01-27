@@ -22,10 +22,6 @@ import (
 	"github.com/google/uuid"
 )
 
-/*var (
-	protocol = flag.Int("p", 578, "The protocol version number sent during ping")
-	favicon  = flag.String("f", "", "If specified, the server's icon will be save to")
-)*/
 
 type status struct {
 	Description chat.Message
@@ -45,9 +41,6 @@ type status struct {
 	Delay   time.Duration
 }
 
-// Icon should be a PNG image that is Base64 encoded
-// (without newlines: \n, new lines no longer work since 1.13)
-// and prepended with "data:image/png;base64,".
 type Icon string
 
 func (i Icon) ToImage() (icon image.Image, err error) {
